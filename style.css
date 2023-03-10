@@ -384,6 +384,8 @@ template {
   font-size: 62.5%;
   --sidebar-button-colour: #1992D4;
   --content-input-bg-colour: #E2E8F0;
+  --card-left-boundary-colour: #EFB42A;
+  --box-shadow-colour: rgb(179, 177, 177);
 }
 
 
@@ -420,11 +422,14 @@ ul {
 
 .content {
   grid-column: 2;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 10px;
 }
 
 .header {
   height: 25vh;
-  box-shadow: 0px 3px 3px rgb(179, 177, 177);
+  box-shadow: 0px 3px 3px var(--box-shadow-colour);
   background-color: white;
 }
 
@@ -472,12 +477,12 @@ button {
 
 button:hover {
   transform: translateY(-4px);
-  box-shadow: 0 5px 2px rgb(179, 177, 177);
+  box-shadow: 0 5px 2px var(--box-shadow-colour);
 }
 
 button:active {
   transform: translateY(-1px);
-  box-shadow: 0 3px 2px rgb(179, 177, 177);
+  box-shadow: 0 3px 2px var(--box-shadow-colour);
 }
 
 .header-bottom {
@@ -494,4 +499,39 @@ button:active {
 .greeting-container {
   flex-direction: column;
   margin-left: 5rem;
+}
+
+.content .project-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+  gap: 1.5rem;
+  margin-right: 1rem;
+}
+
+.card, .announcements, .trending-content {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 2px 4px 2px var(--box-shadow-colour);
+}
+
+.card {
+  height:30rem;
+  width: 35rem;
+  border-left: .85rem solid #EFB42A;
+}
+
+.card-content {
+  margin: 2rem;
+}
+
+.announcements, .trending-content {
+  padding: 2rem;
+}
+
+.announcements-content {
+  padding: 2rem;
+}
+
+.announcements-content:nth-child(-n + 2) {
+  border-bottom: .1rem solid var(--box-shadow-colour);
 }
