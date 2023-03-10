@@ -1,3 +1,3 @@
 # Dashboard
 Admin dashboard built in HTML and CSS.
-Serves as a refresher to CSS Grid and Flex concepts.
+Serves as a refresher on CSS Grid and Flex concepts.
