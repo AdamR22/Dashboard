@@ -437,13 +437,18 @@ ul {
 .header-bottom,
 .search-container,
 .notification-icon-username-container,
-.greeting-container {
+.greeting-container,
+.card-icons {
   display: flex;
 }
 
 .header-top {
   justify-content: space-evenly;
   align-content: center;
+}
+
+.search-container {
+  gap: .5rem;
 }
 
 .search-container,
@@ -499,6 +504,7 @@ button:active {
 .greeting-container {
   flex-direction: column;
   margin-left: 5rem;
+  justify-content: space-evenly;
 }
 
 .content .project-content {
@@ -515,7 +521,7 @@ button:active {
 }
 
 .card {
-  height:30rem;
+  height: 25rem;
   width: 35rem;
   border-left: .85rem solid #EFB42A;
 }
@@ -534,4 +540,29 @@ button:active {
 
 .announcements-content:nth-child(-n + 2) {
   border-bottom: .1rem solid var(--box-shadow-colour);
+}
+
+.notification-icon-username-container {
+  gap: 2rem;
+}
+
+.notification-icon-username-container img {
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+}
+
+.user-image {
+  background-image: url("./illustration-user-avatar-icon/profile-avatar.jpg");
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  width: 10%;
+}
+
+.card-icons {
+  align-content: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-left: 70%;
 }
