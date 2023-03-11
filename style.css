@@ -409,6 +409,8 @@ ul {
   color: white;
   display: flex;
   flex-direction: column;
+  padding: 2rem;
+  font-weight: bold;
 }
 
 .sidebar ul {
@@ -436,6 +438,8 @@ ul {
 .header-top,
 .header-bottom,
 .search-container,
+.logo-and-banner,
+li,
 .notification-icon-username-container,
 .greeting-container,
 .card-icons {
@@ -565,4 +569,17 @@ button:active {
   justify-content: center;
   gap: 2rem;
   margin-left: 70%;
+}
+
+.sidebar svg {
+  fill: white;
+}
+
+.logo-and-banner, .sidebar ul li {
+  align-items: center;
+}
+
+.sidebar ul li {
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
